@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "$schema": "./_schema.json",
   "name": "Email",
   "patterns": [
     {
@@ -11,10 +11,16 @@
   ],
   "repository": {
     "keywords": {
-      "patterns": [{
-        "name": "keyword.control.email",
-        "match": "\\b(if|while|for|return)\\b"
-      }]
+      "patterns": [
+        {
+          "name": "constant.language.eml",
+          "match": ""
+        },
+        {
+          "name": "keyword.other",
+          "match": "\\b--"
+        }
+      ]
     },
     "strings": {
       "name": "string.quoted.double.email",

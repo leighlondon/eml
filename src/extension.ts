@@ -1,37 +1,30 @@
 "use strict";
 
+import {commands as cmd} from "vscode";
 import * as vscode from "vscode";
 
-const EML_MODE: vscode.DocumentFilter = { language: "eml", scheme: "file" };
-
-class EmlHoverProvider implements vscode.HoverProvider {
-  public provideHover(
-    document: vscode.TextDocument,
-    position: vscode.Position,
-    token: vscode.CancellationToken
-  ): Thenable<vscode.Hover> {
-    return new Promise((res, rej) => {
-      new vscode.Hover("This is a hover!");
-    });
-  }
-}
+import * as hover from "./hover";
+import helloWorld from "./cmd/hello.js";
 
 export function activate(context: vscode.ExtensionContext) {
   console.log('Congratulations, your extension "eml" is now active! test');
 
-  let commands: Array<vscode.Disposable> = [];
+  let disposable: Array<vscode.Disposable> = [];
 
-  commands.push(
-    vscode.commands.registerCommand("extension.sayHello", () => {
-      vscode.window.showInformationMessage("Hello World!");
+  disposable.push(
+    cmd.registerCommand("extension.sayHello", helloWorld),
+    vscode.languages.registerHoverProvider(
+      hover.EML_MODE,
+      new hover.EmailHoverProvider()
+    ),
+    cmd.registerCommand("extension.formatBse64", () => {
+      vscode.window.showInformationMessage("BASE64?");
     })
   );
 
-  commands.push(
-    vscode.languages.registerHoverProvider(EML_MODE, new EmlHoverProvider())
-  );
-
-  context.subscriptions.push(...commands);
+  context.subscriptions.push(...disposable);
 }
 
-export function deactivate() {}
+export function deactivate() {
+  vscode.window.showInformationMessage("DEACTIVATE");
+}
