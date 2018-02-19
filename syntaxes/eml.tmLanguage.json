@@ -14,7 +14,7 @@
     "keywords": {
       "patterns": [
         {
-          "name": "entity.name.function",
+          "name": "entity.name.function.eml",
           "match": "^([\\w-]*)+:"
         },
         {
@@ -23,7 +23,7 @@
         },
         {
           "name": "variable.name.eml.address",
-          "match": "(<?[\\w\\.-]*@[\\w\\.-]*[a-zA-Z]+>?)"
+          "match": "(<?[\\w\\.\\-\\+=]*@[\\w\\.-]*[a-zA-Z]+>?)"
         },
         {
           "name": "variable.name.eml.address",
@@ -32,6 +32,14 @@
         {
           "name": "entity.name.class.domain",
           "match": "\\b(\\w[\\w\\.-]*\\.[\\w\\.-]*\\w[a-zA-Z]+)\\b"
+        },
+        {
+          "match": "\\b([A-Za-z]+/[A-Za-z\\-]+)\\b",
+          "name": "constant.other.eml.contenttype"
+        },
+        {
+          "match": "(?i)\\b(base64|smtp|utf\\-8)\\b",
+          "name": "constant.other.eml.base64"
         }
       ]
     },
