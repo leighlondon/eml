@@ -22,8 +22,12 @@
           "match": "\\s((\\d?\\d|1\\d\\d|2[0-4]\\d|25[0-5])\\.){3}(\\d?\\d|1\\d\\d|2[0-4]\\d|25[0-5])\\s"
         },
         {
-          "name": "variable.name.address",
-          "match": "\\s(<?[\\w\\.-]*@[\\w\\.-]*[a-zA-Z]+>?)\\s"
+          "name": "variable.name.eml.address",
+          "match": "(<?[\\w\\.-]*@[\\w\\.-]*[a-zA-Z]+>?)"
+        },
+        {
+          "name": "variable.name.eml.address",
+          "match": "<>"
         },
         {
           "name": "entity.name.class.domain",
