@@ -23,7 +23,7 @@
         },
         {
           "name": "variable.other.eml.address",
-          "match": "(<?[\\w\\.\\-\\+=]*@[\\w\\.-]*[a-zA-Z]+>?)"
+          "match": "(<?[\\w\\.\\-\\+=]*@[\\w\\.-]*>?)"
         },
         {
           "name": "variable.name.eml.blankaddress",
