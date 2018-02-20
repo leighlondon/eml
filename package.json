@@ -29,7 +29,7 @@
   "contributes": {
     "languages": [{
       "id": "eml",
-      "aliases": ["Email (eml)", "Email", "email", "eml"],
+      "aliases": ["Email", "email", "eml"],
       "extensions": [".email", ".eml", ".msg", ".mbox"],
       "configuration": "./language-configuration.json"
     }],
