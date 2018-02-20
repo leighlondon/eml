@@ -4,12 +4,26 @@
   "description": "Email syntax highlighting.",
   "version": "0.0.1",
   "publisher": "publishername",
+  "author": {
+    "name": "leighlondon"
+  },
   "engines": {
     "vscode": "^1.19.0"
   },
   "categories": ["Languages"],
+  "preview": true,
+  "license": "SEE LICENSE IN LICENSE",
+  "homepage": "https://github.com/leighlondon/eml",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/leighlondon/eml.git"
+  },
+  "galleryBanner": {
+    "color": "#4fc3f7",
+    "theme": "dark"
+  },
   "activationEvents": [
-    "onCommand:extension.sayHello"
+    "onLanguage:eml"
   ],
   "main": "./out/extension",
   "contributes": {
