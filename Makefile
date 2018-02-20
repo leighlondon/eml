@@ -1,4 +1,4 @@
 .PHONY=lint
 
 lint:
-	prettier --write 'src/**' 'syntaxes/*.tmLanguage.json' '*.js'
+	prettier --write 'src/**' 'syntaxes/*.tmLanguage.json' '*.js' 'package.json'

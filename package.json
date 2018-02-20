@@ -22,26 +22,30 @@
     "color": "#4fc3f7",
     "theme": "dark"
   },
-  "activationEvents": [
-    "onLanguage:eml"
-  ],
+  "activationEvents": ["onLanguage:eml"],
   "main": "./out/extension",
   "contributes": {
-    "languages": [{
-      "id": "eml",
-      "aliases": ["Email", "email", "eml"],
-      "extensions": [".email", ".eml", ".msg", ".mbox"],
-      "configuration": "./language-configuration.json"
-    }],
-    "grammars": [{
-      "language": "eml",
-      "scopeName": "text.eml",
-      "path": "./syntaxes/eml.tmLanguage.json"
-    }],
-    "commands": [{
-      "command": "extension.sayHello",
-      "title": "Hello World"
-    }]
+    "languages": [
+      {
+        "id": "eml",
+        "aliases": ["Email", "email", "eml"],
+        "extensions": [".email", ".eml", ".msg", ".mbox"],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "eml",
+        "scopeName": "text.eml",
+        "path": "./syntaxes/eml.tmLanguage.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "extension.sayHello",
+        "title": "Hello World"
+      }
+    ]
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
