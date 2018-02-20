@@ -36,7 +36,7 @@
         {
           "match": "(\\s|=)([A-Za-z]+/[A-Za-z\\-]+)\\b",
           "captures": {
-            "2": {"name": "constant.other.eml.contenttype"}
+            "2": { "name": "constant.other.eml.contenttype" }
           }
         },
         {
