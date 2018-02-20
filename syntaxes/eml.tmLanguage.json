@@ -14,8 +14,8 @@
     "keywords": {
       "patterns": [
         {
-          "name": "entity.name.function.eml",
-          "match": "^([\\w-]*)+:"
+          "name": "keyword.control.eml.header",
+          "match": "^([\\w\\-]*)+:"
         },
         {
           "name": "constant.numeric.ipv4",
@@ -26,7 +26,7 @@
           "match": "(<?[\\w\\.\\-\\+=]*@[\\w\\.-]*[a-zA-Z]+>?)"
         },
         {
-          "name": "variable.name.eml.address",
+          "name": "variable.name.eml.blankaddress",
           "match": "<>"
         },
         {
@@ -39,7 +39,7 @@
         },
         {
           "match": "(?i)\\b(base64|smtp|utf\\-8)\\b",
-          "name": "constant.other.eml.base64"
+          "name": "constant.language.eml"
         }
       ]
     },
