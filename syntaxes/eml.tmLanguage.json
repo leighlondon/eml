@@ -34,8 +34,10 @@
           "match": "\\b(\\w[\\w\\.-]*\\.[\\w\\.-]*\\w[a-zA-Z]+)\\b"
         },
         {
-          "match": "\\b([A-Za-z]+/[A-Za-z\\-]+)\\b",
-          "name": "constant.other.eml.contenttype"
+          "match": "(\\s|=)([A-Za-z]+/[A-Za-z\\-]+)\\b",
+          "captures": {
+            "2": {"name": "constant.other.eml.contenttype"}
+          }
         },
         {
           "match": "(?i)\\b(base64|smtp|utf\\-8)\\b",
