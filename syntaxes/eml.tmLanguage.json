@@ -8,6 +8,9 @@
     },
     {
       "include": "#strings"
+    },
+    {
+      "include": "#constants"
     }
   ],
   "repository": {
@@ -16,10 +19,6 @@
         {
           "name": "keyword.control.eml.header",
           "match": "^([\\w\\-]*)+:"
-        },
-        {
-          "name": "constant.numeric.ipv4",
-          "match": "\\s[<\\[\\(]*?((\\d?\\d|1\\d\\d|2[0-4]\\d|25[0-5])\\.){3}(\\d?\\d|1\\d\\d|2[0-4]\\d|25[0-5])[>\\]\\)]*?\\s"
         },
         {
           "name": "variable.other.eml.address",
@@ -32,16 +31,6 @@
         {
           "name": "entity.name.function.domain",
           "match": "\\b(\\w[\\w\\.-]*\\.[\\w\\.-]*\\w[a-zA-Z]+)\\b"
-        },
-        {
-          "match": "(\\s|=)([A-Za-z]+/[A-Za-z\\-]+)\\b",
-          "captures": {
-            "2": { "name": "constant.other.eml.contenttype" }
-          }
-        },
-        {
-          "match": "(?i)\\b(base64|smtp|utf\\-8)\\b",
-          "name": "constant.language.eml"
         }
       ]
     },
@@ -53,6 +42,24 @@
         {
           "name": "constant.character.escape.email",
           "match": "\\\\."
+        }
+      ]
+    },
+    "constants": {
+      "patterns": [
+        {
+          "match": "\\s[<\\[\\(]*?((\\d?\\d|1\\d\\d|2[0-4]\\d|25[0-5])\\.){3}(\\d?\\d|1\\d\\d|2[0-4]\\d|25[0-5])[>\\]\\)]*?\\s",
+          "name": "constant.numeric.ipv4"
+        },
+        {
+          "match": "(\\s|=)([A-Za-z]+/[A-Za-z\\-]+)\\b",
+          "captures": {
+            "2": { "name": "constant.other.eml.contenttype" }
+          }
+        },
+        {
+          "match": "(?i)\\b(base64|smtp|utf\\-8)\\b",
+          "name": "constant.language.eml"
         }
       ]
     }
