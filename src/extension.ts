@@ -7,9 +7,11 @@ export function activate(context: vscode.ExtensionContext) {
 
   let commands: Array<vscode.Disposable> = [];
 
-  commands.push(vscode.commands.registerCommand("extension.sayHello", () => {
-    vscode.window.showInformationMessage("Hello World!");
-  }));
+  commands.push(
+    vscode.commands.registerCommand("extension.sayHello", () => {
+      vscode.window.showInformationMessage("Hello World!");
+    })
+  );
 
   context.subscriptions.push(...commands);
 }
