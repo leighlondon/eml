@@ -1,19 +1,19 @@
 "use strict";
 
-import * as vscode from "vscode";
+import { Disposable, ExtensionContext, commands, window } from "vscode";
 
-export function activate(context: vscode.ExtensionContext) {
+export function activate(context: ExtensionContext) {
   console.log('Congratulations, your extension "eml" is now active! test');
 
-  let commands: Array<vscode.Disposable> = [];
+  let disposables: Array<Disposable> = [];
 
-  commands.push(
-    vscode.commands.registerCommand("extension.sayHello", () => {
-      vscode.window.showInformationMessage("Hello World!");
+  disposables.push(
+    commands.registerCommand("extension.sayHello", () => {
+      window.showInformationMessage("Hello World!");
     })
   );
 
-  context.subscriptions.push(...commands);
+  context.subscriptions.push(...disposables);
 }
 
 export function deactivate() {}
