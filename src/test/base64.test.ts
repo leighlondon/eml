@@ -1,0 +1,33 @@
+import * as assert from "assert";
+
+import * as base64 from "../base64";
+
+describe("base64", () => {
+  context("encode", () => {
+    it("encodes a string", () => {
+      let d: string = "input string";
+      let e: string = "aW5wdXQgc3RyaW5n";
+      assert.equal(e, base64.encode(d));
+    });
+  });
+
+  context("decode", () => {
+    it("decodes a string", () => {
+      let e: string = "aW5wdXQgc3RyaW5n";
+      let d: string = "input string";
+      assert.equal(d, base64.decode(e));
+    });
+  });
+
+  context("end to end", () => {
+    it("encode > decode > encode", () => {
+      let decoded: string = "input string";
+      assert.equal(decoded, base64.decode(base64.encode(decoded)));
+    });
+
+    it("decode > encode > decode", () => {
+      let encoded: string = "aW5wdXQgc3RyaW5n";
+      assert.equal(encoded, base64.encode(base64.decode(encoded)));
+    });
+  });
+});
