@@ -3,6 +3,10 @@ All notable changes to the "eml" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [0.1.0]
+## [0.2.0] 2018-02-22
+### Fixed
+- Fix a major memory leak on Windows platforms from a mistake in a regular expression matcher rule.
+
+## [0.1.0] 2018-02-21 [YANKED]
 ### Added
-- Initial release of syntax highlighting
+- Initial release of syntax highlighting.
