@@ -4,13 +4,7 @@
   "scopeName": "text.eml",
   "patterns": [
     {
-      "include": "#keywords"
-    },
-    {
       "include": "#strings"
-    },
-    {
-      "include": "#constants"
     }
   ],
   "repository": {
