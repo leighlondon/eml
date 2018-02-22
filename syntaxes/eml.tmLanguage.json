@@ -4,7 +4,13 @@
   "scopeName": "text.eml",
   "patterns": [
     {
+      "include": "#keywords"
+    },
+    {
       "include": "#strings"
+    },
+    {
+      "include": "#constants"
     }
   ],
   "repository": {
@@ -12,7 +18,7 @@
       "patterns": [
         {
           "name": "keyword.control.eml.header",
-          "match": "^([\\w\\-]*)+:"
+          "match": "^([\\w\\-]+:)"
         },
         {
           "name": "variable.other.eml.address",
