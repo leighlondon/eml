@@ -1,5 +1,5 @@
 {
-  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "$schema": "./_schema.json",
   "name": "Email",
   "scopeName": "text.eml",
   "patterns": [
