@@ -20,12 +20,12 @@ describe("base64", () => {
   });
 
   context("end to end", () => {
-    it("encode > decode > encode", () => {
+    it("encodes then decodes correctly", () => {
       let decoded: string = "input string";
       assert.equal(decoded, base64.decode(base64.encode(decoded)));
     });
 
-    it("decode > encode > decode", () => {
+    it("decodes then encodes correctly", () => {
       let encoded: string = "aW5wdXQgc3RyaW5n";
       assert.equal(encoded, base64.encode(base64.decode(encoded)));
     });
