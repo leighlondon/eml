@@ -1,9 +1,10 @@
 {
   "name": "eml",
-  "displayName": "Email Syntax",
+  "displayName": "Email",
   "description": "Email syntax highlighting.",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "publisher": "leighlondon",
+  "icon": "etc/eml-icon.png",
   "author": {
     "name": "leighlondon"
   },
@@ -19,7 +20,7 @@
     "url": "https://github.com/leighlondon/eml.git"
   },
   "galleryBanner": {
-    "color": "#64B5F6",
+    "color": "#00B0FF",
     "theme": "light"
   },
   "activationEvents": ["onLanguage:eml"],
