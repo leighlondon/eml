@@ -1,19 +1,17 @@
 "use strict";
 
-import { Disposable, ExtensionContext, commands, window } from "vscode";
+import { ExtensionContext, commands, languages } from "vscode";
+
+import helloWorld from "./cmd/hello";
+import { EML_FILTER, EmailHoverProvider } from "./hover";
 
 export function activate(context: ExtensionContext) {
-  console.log('Congratulations, your extension "eml" is now active! test');
+  console.log('Congratulations, your extension "eml" is now active!');
 
-  let disposables: Array<Disposable> = [];
-
-  disposables.push(
-    commands.registerCommand("extension.sayHello", () => {
-      window.showInformationMessage("Hello World!");
-    })
+  context.subscriptions.push(
+    commands.registerCommand("extension.sayHello", helloWorld),
+    languages.registerHoverProvider(EML_FILTER, new EmailHoverProvider())
   );
-
-  context.subscriptions.push(...disposables);
 }
 
 export function deactivate() {}

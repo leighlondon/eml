@@ -46,7 +46,18 @@
         "command": "extension.sayHello",
         "title": "Hello World"
       }
-    ]
+    ],
+    "configuration": {
+      "type": "object",
+      "title": "eml configuration",
+      "properties": {
+        "eml.hover": {
+          "type": "boolean",
+          "default": false,
+          "description": "Enabling the hover option for eml."
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
