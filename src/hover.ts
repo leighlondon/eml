@@ -15,11 +15,11 @@ export class EmailHoverProvider implements HoverProvider {
     document: TextDocument,
     position: Position,
     _token: CancellationToken
-  ): Thenable<Hover> {
+  ): Promise<Hover> {
     let on = workspace.getConfiguration("eml").get<boolean>("eml.hover", true)
-    if (!on) return undefined
+    if (!on) return Promise.reject("setting not enabled")
     let range = document.getWordRangeAtPosition(position)
-    if (!range) return undefined
+    if (!range) return Promise.reject("no range found")
     let text = document.getText(range)
     return Promise.resolve(new Hover(text))
   }
