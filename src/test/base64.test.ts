@@ -5,17 +5,17 @@ import * as base64 from "../base64"
 describe("base64", () => {
   context("encode", () => {
     it("encodes a string", () => {
-      let d: string = "input string"
-      let e: string = "aW5wdXQgc3RyaW5n"
-      assert.equal(e, base64.encode(d))
+      let decoded: string = "input string"
+      let encoded: string = "aW5wdXQgc3RyaW5n"
+      assert.equal(encoded, base64.encode(decoded))
     })
   })
 
   context("decode", () => {
     it("decodes a string", () => {
-      let e: string = "aW5wdXQgc3RyaW5n"
-      let d: string = "input string"
-      assert.equal(d, base64.decode(e))
+      let encoded: string = "aW5wdXQgc3RyaW5n"
+      let decoded: string = "input string"
+      assert.equal(decoded, base64.decode(encoded))
     })
   })
 
