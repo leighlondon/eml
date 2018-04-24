@@ -6,7 +6,7 @@ import helloWorld from "./cmd/hello"
 import { EML_FILTER, EmailHoverProvider } from "./hover"
 
 export function activate(context: ExtensionContext) {
-  console.log('Congratulations, your extension "eml" is now active!')
+  console.log('[eml] activated')
 
   context.subscriptions.push(
     commands.registerCommand("extension.sayHello", helloWorld),
