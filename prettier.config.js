@@ -6,6 +6,12 @@ module.exports = {
       options: {
         printWidth: 200
       }
+    },
+    {
+      files: "*",
+      options: {
+        semi: false
+      }
     }
   ]
-};
+}
