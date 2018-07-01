@@ -1,5 +1,5 @@
-import { window } from "vscode"
+import { window } from "vscode";
 
 export default function helloWorld() {
-  window.showInformationMessage("Hello World!")
+  window.showInformationMessage("Hello World!");
 }
