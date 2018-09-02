@@ -1,5 +1,7 @@
 import { window } from "vscode";
 
-export default function helloWorld() {
+const helloWorld = () => {
   window.showInformationMessage("Hello World!");
-}
+};
+
+export default helloWorld;
