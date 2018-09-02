@@ -11,7 +11,9 @@
   "engines": {
     "vscode": "^1.19.0"
   },
-  "categories": ["Languages"],
+  "categories": [
+    "Programming Languages"
+  ],
   "preview": true,
   "license": "SEE LICENSE IN LICENSE",
   "homepage": "https://github.com/leighlondon/eml",
@@ -23,14 +25,25 @@
     "color": "#00B0FF",
     "theme": "light"
   },
-  "activationEvents": ["onLanguage:eml"],
+  "activationEvents": [
+    "onLanguage:eml"
+  ],
   "main": "./out/extension",
   "contributes": {
     "languages": [
       {
         "id": "eml",
-        "aliases": ["Email", "email", "eml"],
-        "extensions": [".email", ".eml", ".msg", ".mbox"],
+        "aliases": [
+          "Email",
+          "email",
+          "eml"
+        ],
+        "extensions": [
+          ".email",
+          ".eml",
+          ".msg",
+          ".mbox"
+        ],
         "configuration": "./language-configuration.json"
       }
     ],
@@ -67,9 +80,9 @@
     "test": "npm run compile && node ./node_modules/vscode/bin/test"
   },
   "devDependencies": {
-    "typescript": "^2.6.1",
-    "vscode": "^1.1.6",
+    "@types/mocha": "^2.2.42",
     "@types/node": "^7.0.43",
-    "@types/mocha": "^2.2.42"
+    "typescript": "^2.6.1",
+    "vscode": "^1.1.21"
   }
 }
