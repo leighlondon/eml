@@ -20,6 +20,7 @@
     "embedded-html": {
       "patterns": [
         {
+          "contentName": "meta.embedded.block.html",
           "begin": "(?i)<(!DOCTYPE\\s*)?(html)>",
           "end": "</(html)>",
           "beginCaptures": {
@@ -29,7 +30,6 @@
           "endCaptures": {
             "1": { "name": "entity.name.tag.html" }
           },
-          "contentName": "meta.embedded.block.html",
           "patterns": [{ "include": "text.html.basic" }]
         }
       ]
