@@ -2,7 +2,7 @@
   "name": "eml",
   "displayName": "Email",
   "description": "Email syntax highlighting.",
-  "version": "0.2.2",
+  "version": "0.3.1",
   "publisher": "leighlondon",
   "icon": "etc/eml-icon.png",
   "author": {
@@ -12,7 +12,6 @@
     "vscode": "^1.19.0"
   },
   "categories": ["Programming Languages"],
-  "preview": true,
   "license": "SEE LICENSE IN LICENSE",
   "homepage": "https://github.com/leighlondon/eml",
   "repository": {
