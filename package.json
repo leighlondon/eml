@@ -2,7 +2,7 @@
   "name": "eml",
   "displayName": "Email",
   "description": "Email syntax highlighting.",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "publisher": "leighlondon",
   "icon": "etc/eml-icon.png",
   "author": {
