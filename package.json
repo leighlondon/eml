@@ -11,9 +11,7 @@
   "engines": {
     "vscode": "^1.19.0"
   },
-  "categories": [
-    "Programming Languages"
-  ],
+  "categories": ["Programming Languages"],
   "license": "SEE LICENSE IN LICENSE",
   "homepage": "https://github.com/leighlondon/eml",
   "repository": {
@@ -24,25 +22,14 @@
     "color": "#00B0FF",
     "theme": "light"
   },
-  "activationEvents": [
-    "onLanguage:eml"
-  ],
+  "activationEvents": ["onLanguage:eml"],
   "main": "./out/extension",
   "contributes": {
     "languages": [
       {
         "id": "eml",
-        "aliases": [
-          "Email",
-          "email",
-          "eml"
-        ],
-        "extensions": [
-          ".email",
-          ".eml",
-          ".msg",
-          ".mbox"
-        ],
+        "aliases": ["Email", "email", "eml"],
+        "extensions": [".email", ".eml", ".msg", ".mbox"],
         "configuration": "./language-configuration.json"
       }
     ],
