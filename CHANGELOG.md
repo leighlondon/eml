@@ -3,6 +3,10 @@ All notable changes to the "eml" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.3.2] 2019-02-10
+### Changed
+- Updated dependency.
+
 ## [0.3.1] 2018-09-20
 ### Added
 - Support for highlighting embedded HTML content.
