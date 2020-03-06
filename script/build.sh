@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-set -eu
-hash vsce 2>/dev/null || { echo 'CRITICAL: missing "vsce"'; exit 1; }
+die() { echo "$1" >&2; exit "${2:-1}"; }
+hash vsce 2>/dev/null || die "missing vsce"
 
-vsce package
+vsce package || die "cant package"
