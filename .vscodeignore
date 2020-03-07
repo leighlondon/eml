@@ -1,4 +1,5 @@
 .vscode/**
-.vscode-test/**
 .gitignore
+bin/**
 fixtures/**
+prettier.config.js
