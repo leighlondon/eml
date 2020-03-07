@@ -1,4 +1,3 @@
 # eml
 
-Syntax highlighting for email files, like `.eml`
-
+Syntax highlighting for email files like `.eml`.

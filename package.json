@@ -24,9 +24,6 @@
     "color": "#00B0FF",
     "theme": "light"
   },
-  "activationEvents": [
-    "onLanguage:eml"
-  ],
   "contributes": {
     "languages": [
       {
