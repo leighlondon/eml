@@ -49,7 +49,7 @@
       {
         "language": "eml",
         "scopeName": "text.eml",
-        "path": "./syntaxes/eml.tmLanguage.json",
+        "path": "./syntax/eml.tmLanguage.json",
         "embeddedLanguages": {
           "meta.embedded.block.html": "html"
         }
