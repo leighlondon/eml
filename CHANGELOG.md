@@ -3,6 +3,10 @@ All notable changes to the "eml" extension will be documented in this file.
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.4.0] 2020-03-07
+### Removed
+- Removed all of the unused extension code, but keeps the syntax.
+
 ## [0.3.2] 2019-02-10
 ### Changed
 - Updated dependency.
